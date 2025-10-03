@@ -1,0 +1,33 @@
+package com.example.dev1902;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+//programming language page
+public class ProgrammingLanguage extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+
+        //displays popup with button to launch app
+        FXMLLoader fxmlLoader = new FXMLLoader(ProgrammingLanguage.class.getResource("program-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        stage.setTitle("Launch KnowledgeTrack App");
+        stage.setScene(scene);
+        stage.show();
+
+        FXMLLoader fxmlLoader1 = new FXMLLoader(ProgrammingLanguage.class.getResource("program-view.fxml"));
+        Scene scene1 = new Scene(fxmlLoader1.load(), 320, 240);
+        stage.setTitle("Navigate to Programming Languages Tab");
+        stage.setScene(scene1);
+        stage.show();
+
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}

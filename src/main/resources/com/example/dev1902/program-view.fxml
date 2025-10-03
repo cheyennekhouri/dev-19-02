@@ -6,11 +6,14 @@
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.dev1902.HelloController">
+      fx:controller="com.example.dev1902.ProgrammingLanguageControl">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
   </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+  <Label fx:id="popUp"/>
+  <Button text="Launch KnowledgeTrack App" onAction="#onHelloButtonClick"/>
+
+  <Label fx:id="popUp2"/>
+  <Button text = "Navigate to Programming Languages Tab" onAction="#onNavigateButtonClick"/>
 </VBox>
