@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="cs151.application.MainController"
-      spacing="16" alignment="CENTER"
-      prefWidth="640" prefHeight="420">
-    <Label text="Define Programming Languages" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
-    <Label text="" />
-    <Button text="Back to Home" onAction="#goBackToHome"/>
+      spacing="12" alignment="CENTER"
+      prefWidth="360" prefHeight="320">
+
+    <Label text="KnowledgeTrack: Profile Page" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <Label text="Full Name:"/>
+    <TextField fx:id="nameField" promptText="Enter student name" maxWidth="260"/>
+
+
+    <Label text="Programming Language:"/>
+    <TextField fx:id="languageField" promptText="Enter primary language" maxWidth="260"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Save" />
+        <Button text="Edit" />
+        <Button text="Back to Home" onAction="#goBackToHome"/>
+    </HBox>
 </VBox>

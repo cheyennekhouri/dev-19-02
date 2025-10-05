@@ -31,6 +31,7 @@ public class MainController {
             e.printStackTrace();
         }
     }
+
     @FXML
     private void goBackToHome(ActionEvent event) {
         try {
